@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(to top, hsl(210, 1%, 69%), #cad1d3);
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #cad1d3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card button:hover {
+    background-color: #D6E9FF;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+}
+/* Estilo do botão Início */
+.btn-inicio {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    background-color: #444; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    font-family: Poppins, sans-serif; /* Mesma fonte do restante da página */
+    font-size: 14px; /* Tamanho da fonte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito hover no botão Início */
+.btn-inicio:hover {
+    background-color: #D6E9FF; /* Alteração da cor de fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Pequeno aumento no tamanho */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Intensificação da sombra */
+}
+
+/* Espaçamento entre o botão e outros itens no header */
+.nav-left {
+    margin-right: 20px;
+}
